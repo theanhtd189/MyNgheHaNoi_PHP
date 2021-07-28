@@ -1,0 +1,254 @@
+div h2{
+    padding: 4px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2c2e53;
+    margin-bottom: 2rem;
+    position: relative;
+    display: block;
+   
+}
+div h2:before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    /* height: 42px; */
+    border-top: 7px solid #bd945f;
+}
+
+div h3{
+    padding: 4px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2c2e53;
+    margin-bottom: 2rem;
+    position: relative;
+    display: block;
+   
+}
+div h3:before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    /* height: 42px; */
+    border-top: 7px solid #bd945f;
+}
+
+#sidebar{
+    width: 100%;
+    height: auto;
+    background: #e9ecef;
+}
+#sidebar > ul > li{
+    line-height: 60px;
+    transition: .5s;
+}
+#sidebar > ul > li:nth-child(odd){
+    background-color: rgb(227, 216, 236);
+}
+
+.sidebar-header {
+    padding: 1rem 0px;
+    background: rgb(0, 0, 0);
+}
+.sidebar-header h4 {
+    color: wheat;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+
+#sidebar > ul li a{
+    display: block;
+    position: relative;
+    color: black;
+    font-size: 18px;
+    width: 100%;
+    padding-left: 10px;
+    text-decoration: none;
+    transition: .5s;
+}
+#sidebar > ul li a:hover{
+    background: rgb(204, 133, 133);
+    transition: .5s;
+}
+
+#sidebar ul.cap-2 > ul{
+    position: static;
+}
+
+#sidebar ul.cap-2 > li{
+    line-height: 42px;
+    border-bottom: none;
+}
+
+#sidebar ul.cap-2 li > a{
+    font-size: 17px;
+    color: #000000;
+    padding-left: 30px;
+}
+#sidebar > ul li a span{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: .8s;
+} 
+
+/* #sidebar > ul li a:hover span{
+    transform: translateY(-50%) rotate(-90deg);
+    transition: all 1s;
+} */
+
+#sidebar ul.cap-2 li > ul {
+    position: static;
+    display: none;
+}
+
+#sidebar ul.cap-2 ul li a{
+    font-size: 17px;
+    color: #000;
+    padding-left: 60px;
+}
+
+ul.cap-2{
+    display: none;
+    background: #edf3ee;
+}
+
+ul.cap-3{
+    display: none;
+    background: #f2f9f9;
+}
+
+/* #sidebar ul.cap-1 > li:hover ul.cap-2{
+    display: block;
+}
+
+#sidebar ul.cap-2 > li:hover ul.cap-3{
+    display: block;
+}
+ */
+
+
+/* sanpham */
+
+ .san-pham-ban-chay{
+    background: #fff;
+    padding: 2rem 0px;
+}
+
+.san-pham-ban-chay{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+ .san-pham-ban-chay .product{
+    padding: 1em .8em 0.5em .8em;
+    position: relative;
+    z-index: 1;
+}
+
+.product{
+    margin-bottom: 2rem;
+}
+.product .img{
+    overflow: hidden;
+    transition: .8s;
+    width: 100%;
+    max-height: 240px;
+    min-height: 240px;
+    position: relative;
+}
+.product .img:hover img{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: .8s;
+}
+.product img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 236px;
+    min-height: 240px;
+}
+
+
+
+.information{
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #2b232373;
+    transition: .8s;
+}
+.view a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: #4357a0;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    text-decoration: none!important;
+}
+.product .img:hover ,.product:hover .img {
+    transition: .8s;
+}
+.product .img:hover .information{
+    opacity: 1;
+    transition: .8s;
+    cursor: pointer;
+}
+.product .info{
+    align-items: center;
+    position: relative; 
+    padding-top: 1rem;
+    transition: .8s;
+}
+.product .name{
+    width: 100%;
+    padding:0;
+    margin: 0;
+    overflow: hidden;
+    font-size: 1rem;  
+}
+.product .name a {
+    white-space: nowrap;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-overflow: ellipsis;    
+    width: 100%;
+    overflow: hidden;
+    color: #397345;
+}
+.product .name a:hover{
+    color: #04731b;
+}
+.product p.price  {
+    color: #a8a8a8;
+    font-family: "Gotham-Thin";
+    font-size: .9rem;
+}
+#sidebar ul li>.active {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}

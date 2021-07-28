@@ -1,0 +1,194 @@
+<div class="content-wrapper">
+	<div class="page-header">
+		<h3 class="page-title">Danh Sách Sản Phẩm </h3>
+		
+	</div>
+	<div class="row">
+		<div class="col-lg-12 grid-margin stretch-card">
+			<div class="card">
+				<div class="card-body">
+					<div class=" d-flex justify-content-between align-items-center">
+						<h4 class=" card-title" style="display: contents;">Thông Tin Sản Phẩm</h4>
+						<a href="admin/product/add" class="btn btn-success" role="button">Thêm Sản Phẩm </a>
+					</div>
+					<hr>
+					<table class="table table-striped w-100">
+						<thead class="w-100">
+							<tr>
+								<th width="2%"></th>
+								<th>Thông Tin Sản Phẩm </th>
+								<th>Hình Ảnh </th>
+								<th>Size</th>
+								<th>Thông Tin Chi Tiết </th>
+								<th width="5%"></th>
+							</tr>
+						</thead>
+						<tbody class="w-100">
+							<?php if (count($data["arr_product"]) > 0 ) :?>
+								
+								<?php foreach ($data["arr_product"] as $key ):?>
+									<tr>
+										<th class="product-checkbox">
+											<input type="checkbox" name="delete" class="delete-list-product" value="<?=$key["MaSP"]?>">
+										</th>
+
+										<td class="product-ma">
+											<div class="ma-sp">
+												<p><b class="text-primary">Mã  :  </b><?=$key["MaSP"]?></p>
+											</div>
+											<div class="ten-sp">
+												<p><b class="text-primary">Tên :  </b> <?=$key["TenSp"]?></p>
+												<p class="w-100" style="overflow: hidden;">
+													<b class="text-primary">Loại SP :  </b>  
+													<?=$key["TenCategory"]?>
+												</p>
+											</div>
+
+										</td>
+										<td class="product-image">
+											<div class="product-img">
+												<img src="./public/upload/images/<?=$key["AnhChinh"]?> " alt="image">
+											</div>
+										</td>
+
+										<td class="product-size" > 
+											<ul>
+												<?php if(count($key["detale_product"])>0) :?>
+
+													<?php for($j = 0 ; $j<count($key["detale_product"]) ; $j++): ?>
+														<li><?= $key["detale_product"][$j]["LoaiSize"] ?></li>
+                                                        <?php if ($j==4){break;}?>
+													<?php endfor ?>			
+												<?php endif?>
+				
+												
+											</ul>
+											<a class="btn btn-sm text-primary" style="background: #f0f1f6;" data-toggle="modal" data-target="#myModal_<?=$key["MaSP"]?>">Xem Thêm ....</a>
+											<div class="modal fade " id="myModal_<?=$key["MaSP"]?>" role="dialog">
+												<div class="modal-dialog modal-lg">
+													<div class="modal-content  bg-white">
+														<div class="modal-header">
+															<h4 class="modal-title">Cam Sành Miền Tây</h4>
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+														</div>
+														<div class="modal-body ">
+															<table class="table table-hover bg-white">
+																<thead class="">
+																	<tr>
+																		<th width="5%"></th>
+																		<th width="15%">Loại ( Size )</th>
+																		<th width="10%"> Số Lượng</th>
+																		<th width="20%">Giá Nhập (VND) / Đơn vị</th>
+																		<th width="20%">Giá Bán (VND) / Đơn vị</th>
+																		<th>Giảm Giá (%)</th>
+																		<th width="10%">Trạng Thái</th>
+																		<th width="10%"></th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<?php if(count($key["detale_product"])>0) :?>
+
+																		<?php foreach ($key["detale_product"] as $val): ?>
+																			<tr>
+																				<td class="id"></td>
+																				<td class="loai"><?=$val["LoaiSize"]?></td>
+																				<td class="so-luong"><?=$val["SoLuong"]?></td>
+																				<td class="gia-nhap"><?=substr($val["GiaNhap"] , 0 , strrpos($val["GiaNhap"], '.'))?></td>
+																				<td class="gia-ban"><?=substr($val["GiaBan"] , 0 , strrpos($val["GiaBan"], '.'))?></td>
+																				<td class="giam-gia"><?=$val["GiamGia"]?></td>
+																				<td>
+																					<?php if ($val["TrangThai"] == 1) : ?> 
+																						<label class="badge badge-success">Hiển Thị</label>
+																						<?php else: ?>
+																							<label class="badge badge-danger">Chặn</label>
+																						<?php endif ?>
+																					</td>
+																					<td>
+																						<a href="./admin/product/edit/<?=$key["MaSP"]?>" class="btn btn-warning btn-sm btn-edit-detale-product" type="button">Sửa</a>
+											                                            <button class="btn btn-danger btn-sm btn-del-detale-product" type="button" onclick="Delete_Details_Pro(<?=$val["ID"]?>)">Xóa</button>
+																					</td>
+
+																				</tr>
+																			<?php endforeach ?>
+																		<?php endif ?>
+																	</tbody>
+																</table>
+															</div>
+															<div class="modal-footer d-flex justify-content-between">
+																<button type="button" class="btn btn-default btn-danger" data-dismiss="modal">Close</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</td>
+											<td class="product-thong-tin">
+												<p><b class="text-primary">Đơn vị tính :  </b> <?=$key["DonViTinh"]?></p>
+												<p class="w-100" style="overflow: hidden;"><b class="text-primary">Nổi Bật :  </b> 
+													<?php if ($key["NoiBat"] == 1) : ?> 
+														<label class="badge badge-success" onclick="ChangeNoiBaT('<?=$key['MaSP']?>')">Có</label>
+													<?php else: ?>
+														<label class="badge badge-danger" onclick="ChangeNoiBaT('<?=$key['MaSP']?>')">Không</label>
+													<?php endif ?>
+												</p>
+												<p class="w-100">
+													<b class="text-primary">Trạng thái :  </b>
+													<?php if ($key["TrangThai"] == 1) : ?> 
+														<label class="badge badge-success" onclick="ChangeStatus('<?=$key['MaSP']?>')">Hiển Thị</label>
+													<?php else: ?>
+														<label class="badge badge-danger" onclick="ChangeStatus('<?=$key['MaSP']?>')">Chặn</label>
+													<?php endif ?>
+													</p>
+												</td>
+
+												<td>
+													<div class="btn-group-vertical">
+														<button type="button" class="btn btn-success">Xem</button>
+														<a href="./admin/product/edit/<?=$key["MaSP"]?>" class="btn btn-warning">Sửa</a>
+														<button type="button" class="btn btn-danger" onclick="DeleteProduct('<?=$key["MaSP"]?>')">Xóa</button>
+													</div>
+												</td>
+											</tr>
+										<?php endforeach ?>
+									<?php endif ?>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="8">
+											<button class="btn btn-primary btn-sm" id="check-all" type="button">Chọn tất cả</button>
+											<button class="btn btn-success btn-sm" id="clear-all" type="button">Bỏ chọn tất cả</button>
+											<button id="btn-delete" class="btn btn-danger btn-sm" type="button">Xóa các mục đã chọn</button>
+										</td>
+									</tr>
+									<tr>
+										<?php $page = (isset($_GET["page"]))?$_GET["page"]:1; ?>
+										<?php if ($page > 0 && $page<=$data["so_trang"]):?>
+											<td colspan="8" >
+												<ul class="pagination justify-content-center">
+													<?php if($page > 1): ?>
+														<li class="page-item disabled">
+															<a class="page-link" href="admin/product&page=<?=($page-1)?>" tabindex="-1" aria-disabled="true">Previous</a>
+														</li>
+													<?php endif ?>
+													<?php for($i = 1 ; $i<=$data["so_trang"] ; $i++): ?>
+														<li class="page-item">
+															<a class="page-link <?= ($i==$page)?'bg-dark text-light':'' ?>" href="admin/product&page=<?=$i?>"><?=$i?></a>
+														</li>
+													<?php endfor ?>
+													<?php if($page < $data["so_trang"]): ?>
+														<li class="page-item">
+															<a class="page-link" href="admin/product&page=<?=($page+1)?>">Next</a>
+														</li> 
+													<?php endif ?>
+												</ul>
+											</td>
+										<?php endif ?>
+									</tr>	
+								</tfoot>
+							</table>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>

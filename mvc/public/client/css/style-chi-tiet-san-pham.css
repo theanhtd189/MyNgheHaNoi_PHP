@@ -1,0 +1,387 @@
+
+.sp{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: 2rem 0px 0px 0px;
+    background: #fff;
+}
+
+.alert{
+    background-color: #e9ecef;
+    margin: 15px;
+
+}
+
+#img-sp{
+    width: 100%;
+}
+
+#ten-sp{
+    font-size: 27px;
+    color: #269300;
+    font-family: 'Gotham-Medium'!important;
+    border-bottom: 4px solid #269300;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+strong{
+    width: 110px;
+    display: inline-block;
+}
+
+.rate i{
+    color: #ff9600;
+    text-shadow: 1px 1px #333;
+}
+
+.box-info p .old-price{
+    margin-left: 10px;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.text-primary{
+    color: #269300!important;
+}
+
+.box-info{
+    border-bottom: 4px solid #269300;
+}
+
+.more-info{
+    border-bottom: 4px solid #269300;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.order .form-group{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.order .control button i{
+    margin-right: 7px;
+}
+
+.order .control{
+    margin-top: 10px;
+}
+
+.camket-right .title-section{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    background: #269300;
+    padding: .5rem 0;
+    color: #fff;
+}
+
+.camket-right .list-unstyled li i{
+    margin-right: 10px;
+    font-size: 17px;
+    color: #269300;
+}
+
+.camket-right .list-unstyled li{
+  margin-bottom: 15px;
+}
+
+/* --------------------------------san pham ban chay---------------- */
+.news{
+    margin-top: 20px;
+}
+.news .title-section{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    background: #269300;
+    padding: .5rem 0;
+    color: #fff;
+}
+
+.news.sidebar .media-body h5 a {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #269300;
+    text-decoration: none;
+}
+
+.news.sidebar .media-body a {
+    color: #212529;
+    font-size: .8rem;
+}
+
+.news.sidebar .media-body a:hover {
+    color: #ff9600;
+    text-decoration: none;
+}
+
+h6{
+    height: 40px;
+    width: 80px;
+    font-size: 17px;
+    color: white;
+    background-color:#269300;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    
+}
+
+#thong-tin{
+    margin-top: -7px;
+   border: 1px solid #dddbd9;
+   padding: 15px 10px;
+}
+
+#user{
+    height: auto;
+    width: 80%;
+}
+
+#lb{
+    width: 10%;
+}
+
+
+.row .comment{
+    height: 60px;
+    width: 90%;
+    border: 1px solid rgb(224, 220, 220);
+    margin-bottom: 20px;
+}
+
+.binh-luan{
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 480px){
+    .sp .row .col .row{
+        display: block;
+    }
+
+    #mt{
+        margin: 30px;
+        margin-bottom: 20px;
+        
+    }
+
+    .sp .row .col  .binh-luan .col{
+        margin-top: 20px;
+        
+    }
+    .sp .row .col  .binh-luan .col input{
+        width: 300px;
+    }
+    h3.list-product-title{
+        font-size: 25px;
+    }
+
+
+}
+
+#sp-lienquan{
+    text-align: center;
+}
+
+.row .product-group .row .col-12 .card{
+margin-left: 20px;
+margin-right: 20px;
+
+}
+
+#gui{
+    width:10%; 
+    height: 60px; 
+    border: 1px solid rgb(209, 206, 206); 
+    border-bottom-right-radius:5px ; 
+    border-top-right-radius:5px ;
+    background-color: #269300;;
+    color: white;
+}
+
+#gui:hover{
+   background-color: #ffc107;;
+   color: black;
+   cursor: pointer;
+}
+
+#img-bt{
+    width:50px;
+    height:50px;
+  margin-right: 20px;
+}
+
+.commen{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  
+}
+
+#btn-mota{
+    background-color:#269300 ;
+    color: white; 
+    text-align: center; 
+    padding-top: 10px; 
+}
+
+#btn-chitiet{
+    background-color:#269300 ;
+    color: black; 
+    height: 40px;
+    width: 150px; 
+    text-align: center; 
+    padding-top: 10px; 
+    height: 42px; 
+    background-color: #d4cdcd;
+}
+
+#comment-user{
+    margin-top:auto;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* sản phẩm nổi bật */
+
+.san-pham-noi-bat , .san-pham-ban-chay{
+    background: #fff;
+    padding: 2rem 0px;
+}
+
+.san-pham-noi-bat{
+    margin-bottom: 3rem;
+}
+
+.san-pham-noi-bat .product ,  .san-pham-ban-chay .product{
+    padding: 1em .8em 0.5em .8em;
+    position: relative;
+    z-index: 1;
+}
+.product .img{
+    overflow: hidden;
+    transition:all 2s;
+    width: 100%;
+    max-height: 240px;
+    min-height: 240px;
+    position: relative;
+}
+/* .product .img:hover img{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 2s;
+} */
+.product img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.information{
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #2b232373;
+    transition: all 2s;
+}
+.view a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: #008d00;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    text-decoration: none!important;
+}
+.view a:hover{
+    color: black;
+}
+.product .img:hover .information{
+    opacity: 1;
+    transition: all 2s;
+}
+
+
+.product .info{
+    align-items: center;
+    position: relative;
+   
+    padding-top: 1rem;
+    transition: all 2s;
+}
+.product .name{
+
+    width: 100%;
+    padding:0;
+    margin: 0;
+    overflow: hidden;
+    font-size: 1rem;
+     
+}
+.product .name a {
+    white-space: nowrap;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-overflow: ellipsis;    
+    width: 100%;
+    overflow: hidden;
+    color: #397345;
+}
+.product .name a:hover{
+    color: #04731b;
+}
+.product p.price  {
+    color: #a8a8a8;
+    font-family: "Gotham-Thin";
+    font-size: .9rem;
+}
+/**/
+
+#information-product img{
+    width: calc(100% - 2rem);
+    height: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#information-product h1{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+
+}
+#information-product strong{
+    width: 100%;
+}
+#information-product h2 ,.binh-luan h2 , .binh-luan h4 ,#information-product h3 ,#information-product h4 ,#information-product h5 , #information-product h6{
+    font-family: "Gotham-Medium"!important;
+}
+#information-product p , .binh-luan p{
+    font-family: "Font Awesome 5 Free"!important;
+}
+
+

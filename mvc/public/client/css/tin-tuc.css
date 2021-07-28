@@ -1,0 +1,348 @@
+h1.title-tin-tuc{
+    padding: 4px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2c2e53;
+    margin-bottom: 2rem;
+    position: relative;
+    display: block;
+   
+}
+h1.title-tin-tuc:before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    /* height: 42px; */
+    border-top: 7px solid #bd945f;
+}
+
+.sp{
+    background: #fff;
+    margin: 2rem auto;
+    padding: 2rem 0px;
+}
+
+.alert{
+    background-color: #e9ecef;
+}
+
+#img-sp{
+    width: 100%;
+}
+
+#ten-sp{
+    font-size: 35px;
+    color: #269300;
+    border-bottom: 4px solid #269300;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+strong{
+    width: 110px;
+    display: inline-block;
+}
+
+.rate i{
+    color: #ff9600;
+    text-shadow: 1px 1px #333;
+}
+
+.box-info p .old-price{
+    margin-left: 10px;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.text-primary{
+    color: #269300!important;
+}
+
+.box-info{
+    border-bottom: 4px solid #269300;
+}
+
+.more-info{
+    border-bottom: 4px solid #269300;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.order .form-group{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.order .control button i{
+    margin-right: 7px;
+}
+
+.order .control{
+    margin-top: 10px;
+}
+
+.camket-right .title-section{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    background: #269300;
+    padding: .5rem 0;
+    color: #fff;
+}
+
+.camket-right .list-unstyled li i{
+    margin-right: 10px;
+    font-size: 17px;
+    color: #269300;
+}
+
+.camket-right .list-unstyled li{
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* --------------------------------san pham ban chay---------------- */
+.news{
+    margin-top: 20px;
+}
+.news .title-section{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    background: #269300;
+    padding: .5rem 0;
+    color: #fff;
+}
+
+.news.sidebar .media-body h5 a {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #269300;
+    text-decoration: none;
+}
+
+.news.sidebar .media-body a {
+    color: #212529;
+    font-size: .8rem;
+}
+
+.news.sidebar .media-body a:hover {
+    color: #ff9600;
+    text-decoration: none;
+}
+
+h6{
+    height: 40px;
+    width: 80px;
+    font-size: 17px;
+    color: white;
+    background-color:#269300;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    
+}
+
+#thong-tin{
+    margin-top: -7px;
+   border: 1px solid #dddbd9;
+   padding: 15px 10px;
+}
+
+#user{
+    height: auto;
+    width: 80%;
+}
+
+#lb{
+    width: 10%;
+}
+
+
+.row .comment{
+    height: 60px;
+    width: 90%;
+    border: 1px solid rgb(224, 220, 220);
+    margin-bottom: 20px;
+}
+
+.binh-luan{
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 480px){
+    .sp .row .col .row{
+        display: block;
+    }
+
+    #mt{
+        margin: 30px;
+        margin-bottom: 20px;
+        
+    }
+
+    .sp .row .col  .binh-luan .col{
+        margin-top: 20px;
+        
+    }
+    .sp .row .col  .binh-luan .col input{
+        width: 300px;
+    }
+    h3.list-product-title{
+        font-size: 25px;
+    }
+
+
+}
+
+#sp-lienquan{
+    text-align: center;
+}
+
+.row .product-group .row .col-12 .card{
+margin-left: 20px;
+margin-right: 20px;
+
+}
+
+#gui{
+    width:10%; 
+    height: 60px; 
+    border: 1px solid rgb(209, 206, 206); 
+    border-bottom-right-radius:5px ; 
+    border-top-right-radius:5px ;
+    background-color: #269300;;
+    color: white;
+}
+
+#gui:hover{
+   background-color: #ffc107;;
+   color: black;
+   cursor: pointer;
+}
+
+#img-bt{
+    width:50px;
+    height:50px;
+  margin-right: 20px;
+}
+
+.commen{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  
+}
+
+#btn-mota{
+    background-color:#269300 ;
+    color: white; 
+    text-align: center; 
+    padding-top: 10px; 
+}
+
+#btn-chitiet{
+    background-color:#269300 ;
+    color: black; 
+    height: 40px;
+    width: 150px; 
+    text-align: center; 
+    padding-top: 10px; 
+    height: 42px; 
+    background-color: #d4cdcd;
+}
+
+#comment-user{
+    margin-top:auto;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+#img-tintuc{
+    width: 100%;
+    height: 100%;
+}
+
+#thongtin-tintuc a{
+    color: #269300;
+
+    background-color: transparent;
+    font-size: 24px;
+
+}
+
+
+#row-tintuc{
+    border-bottom: 2px dotted #269300; 
+    padding-bottom:20px; 
+    padding-top: 20px;
+}
+
+#ii{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#ul{
+    margin-left: 40px;
+    list-style: square;
+}
+
+.chi-tiet-tin-tuc{
+    padding: 1rem;
+}
+
+.chi-tiet-tin-tuc h1{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Gotham-Medium'!important;
+}
+.chi-tiet-tin-tuc h2{
+    font-family: 'Gotham-Medium'!important;
+    font-size: 1.8rem!important;
+
+}
+.chi-tiet-tin-tuc h3{
+    font-family: 'Gotham-Medium'!important;
+    font-size: 1.6rem!important;
+     
+}
+.chi-tiet-tin-tuc h4{
+    font-family: 'Gotham-Medium'!important;
+    font-size: 1.4rem!important;
+     
+}
+.chi-tiet-tin-tuc h5{
+    font-family: 'Gotham-Medium'!important;
+    font-size: 1.3rem!important;
+     
+}
+.chi-tiet-tin-tuc h6{
+    font-family: 'Gotham-Medium'!important;
+    font-size: 1.2rem!important;
+     
+}
+.chi-tiet-tin-tuc p , .chi-tiet-tin-tuc li {
+    font-family: 'Font Awesome 5 Free'!important;
+    font-size: 1.1rem!important;
+     
+}
+.chi-tiet-tin-tuc strong{
+    width: 100%;
+}
+.chi-tiet-tin-tuc img{
+    width: calc(100% - 2rem)!important;
+    margin:1rem 1rem 1rem 0;
+}

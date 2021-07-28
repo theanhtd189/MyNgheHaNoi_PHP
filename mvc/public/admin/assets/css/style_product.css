@@ -1,0 +1,129 @@
+.hien-thi-image-chinh{
+	border: 1px solid black;
+	width: 250px; height: 150px ; margin: 1em auto 0 auto;
+}
+.hien-thi-image-chinh img{
+	width: 100%;
+	height: 100%;
+}
+div#hien-thi-image-kem-theo{
+	margin-top: 1rem;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 100px;
+}
+
+#hien-thi-image-kem-theo div{
+	width: calc(33.3% - 0.2%);
+	margin-left:0.2%;
+	margin-top:0.2%; 
+	padding: 0.1rem;
+	height: 100px;
+	border: 1px solid black;
+}
+#hien-thi-image-kem-theo div img{
+	width: calc(100% - 0.2%);
+	height: calc(100% - 0.2%);
+}
+
+
+table .product-ma{
+	width: 25%!important;
+	vertical-align: top!important;
+	white-space:inherit!important;
+}
+table .product-ma .ma-sp{
+	margin-bottom: 0px!important;
+	line-height: 15px;
+}
+table .product-ma div.ten-sp{
+	margin-top: 10px;
+	margin-bottom: 0px!important;
+    line-height: 15px; 
+}
+
+table .product-image{
+	width: 15%;
+	max-height: 150px;
+}
+table .product-img{
+	width: 100%;
+}
+.table th img, .table td img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    
+}
+table .product-size{
+	width: 20%;
+	padding-left: 0!important;
+	
+}
+table .product-size ul {
+	margin-bottom: 0!important;
+}
+table .product-thong-tin{
+	width: 23%!important;
+	vertical-align: top!important;
+	white-space:inherit!important;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+.show-image {
+    width: 230px;
+    height: 150px;
+    margin: 1rem auto 0px auto;
+    border: 1px solid black;
+}
+.show-image img{
+   	width: 100%;
+   	height: 100%;
+}
+
+
+.slide-img{
+	max-width: 330px;
+	width: 300px;
+	height: 150px;
+	max-height: 150px;
+	border: 1px solid #b17c7c26;
+}
+.slide-img img{
+	width: calc(100% - .2rem);
+	margin: .1rem;
+	height: 100%;
+}
+
+.show-img-insert-slide{
+	width: 400px ;
+	height: 170px ;
+	border: 1px solid #b17c7c26;
+	margin: 0 auto;
+}
+.show-img-insert-slide img{
+	width: 100%;
+	height: 100%;
+}
+.table-detail-bill {
+	overflow-y: auto;
+    height: 106px;
+}
+.table-detail-bill thead th {
+        position: sticky;
+        top: 0;
+      }
+
+.btn-button-giao-hang{
+	background: blue;
+}
+.btn-button-mua-hang{
+	background: #21d41e;
+}
+.btn-button-huy-don{
+	background: red;
+}

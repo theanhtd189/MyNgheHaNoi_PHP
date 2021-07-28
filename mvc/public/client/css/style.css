@@ -1,0 +1,531 @@
+div h2{
+    padding: 4px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2c2e53;
+    margin-bottom: 2rem;
+    position: relative;
+    display: block;
+   
+}
+div h2:before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    /* height: 42px; */
+    border-top: 7px solid #bd945f;
+}
+
+/* --------------Sản phẩm nổi bật-------------------- */
+
+/* .product{
+    margin-top: 50px;
+}
+
+.sanphamnoibat{
+    
+    font-size: 25px;
+    color: rgb(104, 102, 102);
+    border-bottom:2px solid greenyellow ;
+    margin-bottom: 35px;
+}
+
+.card{
+    width: 200px;
+    height: 400px;
+    position: relative;
+   border: 1px solid orange;
+}
+
+#them-giohang{
+    font-size: 30px;
+    width: 30px;
+    height: auto;
+    color: greenyellow;
+}
+
+#giohang2{
+    border: 1px solid rgb(189, 183, 183);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius:25px ;
+    padding:7px;
+    position: absolute;
+    top:50%;
+    left: 10%;
+}
+
+#giohang2:hover{
+color: white;
+background-color: rgb(65, 226, 65);
+}
+
+#giohang2:hover #them-giohang{
+    color: white;
+
+}
+
+
+#chitiet{
+    border: 1px solid rgb(189, 183, 183);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius:25px ;
+    padding:9px;
+    position: absolute;
+    top:50%;
+    left: 70%;
+}
+
+#chitiet:hover{
+    color: white;
+    background-color: rgb(65, 226, 65);
+}
+    
+#chitiet:hover #them-giohang{
+    color: white;
+    
+}
+
+.card-title{
+    text-align: center;
+}
+
+.gia-box{
+    margin-top: 30px;
+}
+
+#giam-gia{
+    display: inline-block;
+    font-size: 20px;
+    color: #ff9600;
+    margin-right: 40px;
+}
+
+#gia{
+    text-decoration: line-through;
+} */
+
+
+/*list product*/
+.list-product-title{
+	width: 100%;
+	text-transform: uppercase;
+	margin-left: 5px;
+	margin-right: 5px;
+	/* border: 1px solid black;
+	width: 300px; */
+}
+
+.list-product-subtitle{
+	width: 100%;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+/*product card*/
+.product-group{
+	padding-right: 5px;
+	
+}
+.list-product-title{
+	padding-left: 5px;
+}
+.card-product{
+	width: 100%;
+	margin-left: 5px;
+	margin-right: 5px;
+	overflow: hidden;
+	position: relative;
+	
+}
+.card-product:hover{
+	background: #f89e24;
+}
+.card-product:hover .new-price{
+	color: white;
+}
+.card-service{
+	position: relative;
+}
+.card-service:hover{
+	/* background-color: black; */
+	color: #f89e24;
+	/* font-size: 18px; */
+}
+.product-title{
+	margin-bottom: 0.25rem;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+
+	
+}
+.card-text .product-price{
+	position: relative;
+}
+
+.del-price{
+	text-decoration: line-through;
+}
+.new-price{
+	color: #f90;
+	position: absolute;
+	right: 0.5rem;
+}
+.btn-add-to-cart{
+	background-color: #3a5c83 !important;
+	color: white !important;
+}
+.btn-add-to-cart:hover{
+	background-color: #f90 !important;
+}
+.btn-detail{
+	border: 1px solid #3a5c83 !important;
+}
+.btn-detail:hover{
+	color: white !important;
+	background-color: #3a5c83 !important;
+}
+.sale-sticky{
+	color: white;
+	background-color: #f90;
+	display: block;
+	text-align: center;
+	width: 120px;
+	position: absolute;
+	top: 11px;
+    right: -39px;
+	transform: rotate(45deg);
+}
+
+
+/* ------------------------Dich vu--------------------------- */
+
+.dv{
+    height: 200px;
+    overflow: auto;
+    overflow-y:hidden;
+    margin-top: 20px;
+}
+
+
+.dv img{
+    height: 200px;
+    float: left;
+}
+
+.box-dichvu{
+    height: 200px;
+    width: 530px;
+    background-color: rgb(218, 214, 214);
+    border-top: 2px solid  rgb(218, 214, 214);
+    border-right: 2px solid  rgb(218, 214, 214);
+    border-bottom: 2px solid  rgb(218, 214, 214);
+}
+
+#tieude-dv{
+    font-weight: bold;
+    padding-left:215px ;
+}
+
+#chitiet-dv{
+    padding-left:215px ;
+}
+
+
+
+#banner-index{
+    z-index: 5;
+    position:  relative;
+}
+#banner-index img{
+    width: 100%;
+    height: 710px;
+}
+#banner-index .slick-prev{
+    left: 20px;
+}
+#banner-index .slick-next{
+    right: 20px;
+}
+#banner-index .slider{
+    margin: 0px;
+}
+/* ------------------LÝ do bạn nên mua hang--------------------- */
+
+.ly-do-3{
+    margin-top: 3rem;
+    background: #fff;
+    padding: 2rem 0;
+    z-index: 10;
+    padding: 2rem;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+#lydo-muahang{
+    text-align: center;
+    font-size:30px ;
+    margin-bottom: 30px;
+}
+
+#img-muahang{
+    display: block;
+    margin:auto;
+    transition: 0.3s;
+}
+
+#img-muahang:hover{
+    transform: scale(1.1);
+}
+
+.box-muahang .tieude-muahang{
+    color: rgb(178, 226, 65);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.box-muahang .noidung-muahang{
+    text-align: center;
+}
+
+
+
+/* sản phẩm nổi bật */
+
+.san-pham-noi-bat , .san-pham-ban-chay{
+    background: #fff;
+    padding: 2rem 0px;
+}
+
+.san-pham-noi-bat{
+    margin-bottom: 3rem;
+}
+
+.san-pham-noi-bat .product ,  .san-pham-ban-chay .product{
+    padding: 1em .8em 0.5em .8em;
+    position: relative;
+    z-index: 1;
+}
+.product .img{
+    overflow: hidden;
+    transition: .5s;
+    width: 100%;
+    max-height: 240px;
+    min-height: 240px;
+    position: relative;
+    cursor: pointer;
+}
+.img-product {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 254px;
+    height: 240px;
+    background-color: pink;
+}
+
+.product img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+.information{
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #2b232373;
+    transition: .5s;
+}
+.view a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: #4357a0;
+    color: white;
+    font-size: 13px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    text-decoration: none!important;
+}
+
+.product .img:hover .information{
+    opacity: 1;
+    transition: .5s;
+}
+
+
+.product .info{
+    align-items: center;
+    position: relative;  
+    padding-top: 1rem;
+    transition: .5s;
+}
+.product .name{
+
+    width: 100%;
+    padding:0;
+    margin: 0;
+    overflow: hidden;
+    font-size: 1rem;
+     
+}
+.product .name a {
+    white-space: nowrap;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-overflow: ellipsis;    
+    width: 100%;
+    overflow: hidden;
+    color: #397345;
+}
+.product .name a:hover{
+    color: #04731b;
+}
+.product p.price  {
+    color: #a8a8a8;
+    font-family: "Gotham-Thin";
+    font-size: .9rem;
+}
+
+
+/* tin-tuc-noi-bat */
+
+.tin-tuc{
+    background: #fff;
+    padding: 2rem 0px;
+    margin-top: 3rem;
+}
+
+.tin-tuc .box{
+    position: relative;
+}
+
+.tin-tuc .box .img{
+    width: 100%;
+    height: 410px;
+}
+.tin-tuc .box .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.tin-tuc .main-content {
+    position: absolute;
+    bottom: 0;
+    background: #000;
+    padding: 1.5em;
+    width: 100%;
+}
+.tin-tuc .main-content .title a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.tin-tuc .main-content .title{
+
+}
+.tin-tuc .d-flex{
+    padding: 0px 0px 1.5rem 0px;
+
+}
+.tin-tuc .d-flex .img {
+    width: 180px;
+    height: 120px;
+}
+.tin-tuc .d-flex .img img{
+    width: 180px;
+    height: 100%;
+}
+
+.tin-tuc ul li .content {
+    padding-left: 1rem;
+}
+.tin-tuc  .title {
+    margin-bottom: .5em;
+    line-height: 1.2em;
+}
+.tin-tuc .main-content .title a, .tin-tuc  .content .title a {
+    font-size: 1em;
+    text-transform: uppercase;
+    line-height: 13px;
+}
+
+.tin-tuc  .content .title a{
+    color: black;
+    text-decoration:  none;
+}
+.tin-tuc  .content .title a:hover{
+    transition: .5s;
+    color: #8b8edb;
+}
+.tin-tuc .desc {
+    /* font-family: Gotham-Thin; */
+    font-size: 13px;
+    text-align: justify;
+    line-height: 1em;
+    margin: 0;
+    color: #7d7c7c;
+}
+
+
+@media only screen and (max-width: 480px){
+    #lydo-muahang{
+        font-size: 25px;
+    }
+
+    .product-group-title .row .col-md-4 img{
+        width: 400px;
+        height: auto;
+    }
+    
+}
+
+
+
+/* responsive */
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+
+}
+
+
+
+/* // Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 768px) { 
+    .tin-tuc .d-flex {
+        margin-top: 1rem;
+    }
+}
+
+.img-news {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
