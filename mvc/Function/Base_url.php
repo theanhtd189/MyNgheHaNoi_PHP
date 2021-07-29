@@ -1,5 +1,5 @@
 <?php
     function base_url(){
-        return "/mvc";
+        return "https://mynghehanoi.herokuapp.com/";
     }
 ?>

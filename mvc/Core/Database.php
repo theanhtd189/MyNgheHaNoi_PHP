@@ -5,10 +5,10 @@
 	class Database
 	{
 		protected $connect = null;
-		protected $host = "localhost";
-		protected $user = "root";
-		protected $pass = "";
-		protected $name = "mvc";
+		protected $host = "MYSQL5045.site4now.net";
+		protected $user = "a77f49_mynghe";
+		protected $pass = "theanhtd189";
+		protected $name = "db_a77f49_mynghe";
 		protected $table ="";
 		protected $limit = 15;
 		protected $offset = 0;
