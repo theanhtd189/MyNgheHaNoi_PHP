@@ -1,5 +1,5 @@
 <?php
     function base_url(){
-        return "https://mynghehanoi.herokuapp.com";
+        return "https://mynghehanoi.herokuapp.com/";
     }
 ?>
