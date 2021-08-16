@@ -1,7 +1,7 @@
 <?php
     function base_url(){
 
-    return "/";
+    return "https://mynghehanoi.herokuapp.com";
 
     }
 ?>
