@@ -6,7 +6,7 @@
             <ul class="list-unstyled quick-links">
               <li><i class="fa fa-angle-double-right"></i> Chính sách bảo mật thông tin</li>
               <li><i class="fa fa-angle-double-right"></i> Quy định và hình thức thanh toán</li>
-              <li><i class="fa fa-angle-double-right"></i> Chính sách thành viên Fuji</li>
+              <li><i class="fa fa-angle-double-right"></i> Chính sách thành viên</li>
               <li><i class="fa fa-angle-double-right"></i> Chính sách đổi trả</li>
               <li><i class="fa fa-angle-double-right"></i> Chính sách vận chuyển</li>
               <li><i class="fa fa-angle-double-right"></i> Câu hỏi thường gặp</li>
