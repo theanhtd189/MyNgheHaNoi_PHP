@@ -27,7 +27,6 @@
 
 		public function update()
 	    {
-			
 				if(!$_POST["p2"]&&!($_POST["p1"]))
 				{
 
