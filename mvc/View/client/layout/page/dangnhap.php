@@ -1,7 +1,7 @@
 
 <div class="container" id="container">
   <div class="form-container sign-up-container">
-    <form action="./dangnhap/add" method="post">
+    <form action="./DangNhap/add" method="post">
       <h1>Đăng Ký</h1>
       <!-- <div class="social-container">
         <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
