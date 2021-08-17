@@ -26,7 +26,7 @@
 <body>
   <?php if(isset($_GET['url']))
   {
-    echo $_GET['url']; 
+    echo $_GET['url'].'<br>'; 
     echo __DIR__;
   }
   else
