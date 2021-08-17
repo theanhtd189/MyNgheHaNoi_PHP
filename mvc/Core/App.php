@@ -130,11 +130,11 @@
 		}
 
 		function Method($string)
-		
+
 		{
-			// if (strlen($string)>0) {
-			// 	$string = ucfirst(strtolower($string));
-			// }
+			if (strlen($string)>0) {
+				$string = ucfirst(strtolower($string));
+			}
 			return $string;
 		}
 	}
