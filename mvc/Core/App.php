@@ -80,7 +80,7 @@
 
 						header("Location:$this->url/error");
 					} 
-					require_once  ".app/mvc/Controllers/".$this->controller.".php";
+					require_once  "./app/mvc/Controllers/".$this->controller.".php";
 					$this->controller = new $this->controller();
 					// Xử lý action
 					if (isset($arr[1])) {
