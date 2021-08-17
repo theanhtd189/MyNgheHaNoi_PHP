@@ -24,7 +24,7 @@
 </head>
 
 <body>
-  <?php isset($_GET['url'])?$_GET['url']:"chả có gì"; ?>
+  <?php echo isset($_GET['url'])?$_GET['url']:"chả có gì"; ?>
   <section class="main">
     <?php include_once 'layout/header.php'; ?>
 
