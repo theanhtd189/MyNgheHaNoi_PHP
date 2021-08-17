@@ -26,7 +26,7 @@
 							$this->controller = $str;
 							unset($arr[1]);
 						}else{
-							header("Location:$this->url/error#404_controller_admin");`	
+							header("Location:$this->url/error#404_controller_admin");	
 							return;
 						} 
 
