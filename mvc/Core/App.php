@@ -26,7 +26,7 @@
 							$this->controller = $str;
 							unset($arr[1]);
 						}else{
-							header("Location:$this->url/error");	
+							header("Location:$this->url/error#404_controller_admin");`	
 							return;
 						} 
 
@@ -44,7 +44,7 @@
 									# code...
 								}
 							}else{
-								header("Location:$this->url/error");	
+								header("Location:$this->url/error#404_action_admin");	
 							}
 							
 						} else {
@@ -78,7 +78,7 @@
 						unset($arr[0]);
 					}else{
 
-						header("Location:$this->url/error");
+						header("Location:$this->url/error#404_controller");
 					} 
 					require_once  "./mvc/Controllers/".$this->controller.".php";
 					$this->controller = new $this->controller();
@@ -93,7 +93,7 @@
 								# code...
 							}
 						}else{
-							header("Location:$this->url/error");	
+							header("Location:$this->url/error#404_action");	
 						}
 					} else {
 						# code...
