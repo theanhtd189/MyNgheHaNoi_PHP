@@ -83,7 +83,7 @@
 					require_once  "./mvc/Controllers/".$this->controller.".php";
 					$this->controller = new $this->controller();
 
-					
+
 					// Xử lý action
 					if (isset($arr[1])) {
 						if (method_exists($this->controller, $this->Method($arr[1]))) {
@@ -130,6 +130,7 @@
 		}
 
 		function Method($string)
+		
 		{
 			// if (strlen($string)>0) {
 			// 	$string = ucfirst(strtolower($string));

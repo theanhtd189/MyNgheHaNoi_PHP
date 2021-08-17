@@ -30,7 +30,7 @@
     </form>
   </div>
   <div class="form-container sign-in-container">
-    <form action="dangnhap/check" method="POST">
+    <form action="DangNhap/check" method="POST">
       <h1>Đăng Nhập</h1>
       <!-- <div class="social-container">
         <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>

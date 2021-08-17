@@ -16,7 +16,7 @@
 
           <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-9" style="text-overflow: ellipsis;">
             <div id="thongtin-tintuc">
-              <a href="./tintuc/get/<?=$key["slug"]?>"><?=$key["TieuDe"]?></a>
+              <a href="./TinTuc/get/<?=$key["slug"]?>"><?=$key["TieuDe"]?></a>
               <p><?=$key["MoTa"]?></p>
             </div>
           </div>
@@ -30,17 +30,17 @@
                     <ul class="pagination justify-content-center">
                         <?php if($page > 1): ?>
                             <li class="page-item disabled">
-                                <a class="page-link" href="./tintuc&page=<?=($page-1)?>" tabindex="-1" aria-disabled="true">Previous</a>
+                                <a class="page-link" href="./TinTuc&page=<?=($page-1)?>" tabindex="-1" aria-disabled="true">Previous</a>
                             </li>
                         <?php endif ?>
                         <?php for($i = 1 ; $i<=$data["so_trang"] ; $i++): ?>
                             <li class="page-item">
-                                <a class="page-link <?= ($i==$page)?'bg-dark text-light':'' ?>" href="./tintuc&page=<?=$i?>"><?=$i?></a>
+                                <a class="page-link <?= ($i==$page)?'bg-dark text-light':'' ?>" href="./TinTuc&page=<?=$i?>"><?=$i?></a>
                             </li>
                         <?php endfor ?>
                         <?php if($page < $data["so_trang"]): ?>
                             <li class="page-item">
-                                <a class="page-link" href="./tintuc&page=<?=($page+1)?>">Next</a>
+                                <a class="page-link" href="./TinTuc&page=<?=($page+1)?>">Next</a>
                             </li> 
                         <?php endif ?>
                     </ul>

@@ -36,15 +36,15 @@
 	    				return header("Location:$this->url/");
 	    			}
 	    			else{
-	    				return header("Location:$this->url/dangnhap?err=Password không đúng !!!");
+	    				return header("Location:$this->url/DangNhap?err=Password không đúng !!!");
 	    			}
 	    		}else{
 	    			echo "tài khoản hoặc mật khẩu không đúng";
-	    			return header("Location:$this->url/dangnhap?err=Email hoặc password không đúng !!!");
+	    			return header("Location:$this->url/DangNhap?err=Email hoặc password không đúng !!!");
 	    		}
 	    	}
 	    	else{
-	    		return header("Location:$this->url/dangnhap");
+	    		return header("Location:$this->url/DangNhap");
 	    	}
 	    }
 	    public function add()
@@ -56,12 +56,12 @@
 	    		# code...
 	    		if ($this->CustomerModel->check_isset_email_or_sdt('Email' , $_POST["email"]) == true) {
 	    			# code...
-	    			return header("Location:$this->url/dangnhap?err_email=Email đã tồn tại!!!");
+	    			return header("Location:$this->url/DangNhap?err_email=Email đã tồn tại!!!");
 	    			
 	    		}
 	    		if ($this->CustomerModel->check_isset_email_or_sdt('SDT', $_POST["phone"])) {
 	    			# code...
-	    			return header("Location:$this->url/dangnhap?err_phone=Số điện thoại đã tồn tại!!!");
+	    			return header("Location:$this->url/DangNhap?err_phone=Số điện thoại đã tồn tại!!!");
 	    		}
 	    		$arr=[];
 	    		$arr["TenKh"] = $_POST["ho-ten"];
@@ -70,14 +70,14 @@
 	    		$arr["DiaChi"] = $_POST["dia-chi"];
 	    		$arr["MatKhau"] = md5($_POST["password"]);
 	    		if ($this->CustomerModel->insert_customer($arr)) {
-	    			return header("Location:$this->url/dangnhap?success=true");
+	    			return header("Location:$this->url/DangNhap?success=true");
 	    			return;
 	    		} else {
-		    		return header("Location:$this->url/dangnhap?success=false");
+		    		return header("Location:$this->url/DangNhap?success=false");
 	    		}
 	    	}
 	    	else{
-	    		return header("Location:$this->url/dangnhap");
+	    		return header("Location:$this->url/DangNhap");
 	    	}
 	    }
 	}

@@ -13,7 +13,7 @@
 			if (!isset($_SESSION["customer"])) {
 				# code...
 				$url = base_url();
-				header("Location:$url/dangnhap");
+				header("Location:$url/DangNhap");
 			}
 		}
 		public function Index()

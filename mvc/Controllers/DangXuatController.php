@@ -14,7 +14,7 @@
 				# code...
 				unset($_SESSION["customer"]);
 			}
-			header("Location:$url/dangnhap");
+			header("Location:$url/DangNhap");
 		}
 	}
 

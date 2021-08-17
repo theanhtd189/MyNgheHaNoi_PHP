@@ -175,11 +175,11 @@
 
       <div class="box">
         <div class="img">
-        <a href="./tintuc/get/<?=$post['slug']?>"><img src="./public/upload/images/<?=$post["image"]?>" alt="<?= $post["TieuDe"] ?>" class="w-100"></a>
+        <a href="./TinTuc/get/<?=$post['slug']?>"><img src="./public/upload/images/<?=$post["image"]?>" alt="<?= $post["TieuDe"] ?>" class="w-100"></a>
         </div>
         <div class="main-content">
           <p class="title">
-            <a href="./tintuc/get/<?=$post['slug']?>">
+            <a href="./TinTuc/get/<?=$post['slug']?>">
               <?= $post["TieuDe"] ?>
             </a>
           </p>
@@ -195,12 +195,12 @@
       <ul>
         <?php foreach ($data["arrPostsNew"] as $keyposts): ?>
         <li class="d-flex">
-          <div class="img"><a href="./tintuc/get/<?=$keyposts['slug']?>">
+          <div class="img"><a href="./TinTuc/get/<?=$keyposts['slug']?>">
             <img src="./public/upload/images/<?=$keyposts["image"]?>"></a>
           </div>
           <div class="content">
             <p class="title">
-              <a href="./tintuc/get/<?=$keyposts['slug']?>">
+              <a href="./TinTuc/get/<?=$keyposts['slug']?>">
                 <?= $keyposts["TieuDe"] ?>
               </a>
             </p>
@@ -210,7 +210,7 @@
         <?php endforeach ?>
       </ul>
       <div>
-        <a href="./tintuc" class="see-more"> Xem thêm <i class="fas fa-long-arrow-alt-right"></i></a>
+        <a href="./TinTuc" class="see-more"> Xem thêm <i class="fas fa-long-arrow-alt-right"></i></a>
       </div>
     </div>
   </div>

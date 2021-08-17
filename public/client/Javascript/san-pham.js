@@ -2,7 +2,7 @@ function CheckSession() {
 	// body...
 	var check = checkdangnhap();
 	if (check != "true") {
-		location.href="./dangnhap";
+		location.href="./DangNhap";
 		return false;
 	}
 	return true; 
