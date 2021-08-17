@@ -76,24 +76,24 @@
   <div class=" list-menu" style="background: #fff;">
     <ul class="container menu-header ">
       <li class="nav-item">
-        <a class="nav-link" href="./trangchu">Trang chủ</a>
+        <a class="nav-link" href="./TrangChu">Trang chủ</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="./danhmuc">Sản phẩm</a>
+        <a class="nav-link" href="./DanhMuc">Sản phẩm</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="./tintuc">Tin tức</a>
+        <a class="nav-link" href="./TinTuc">Tin tức</a>
       </li>
       <li class="nav-item ">
         <a class="nav-link" href="#lienhe">Liên hệ</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="./giohang">Giỏ hàng</a>
+        <a class="nav-link" href="./GioHang">Giỏ hàng</a>
       </li>
       <?php if (!isset($_SESSION["customer"])) :?>
       <li>
-        <a class="nav-link" href="./dangnhap">Đăng nhập</a>
+        <a class="nav-link" href="./DangNhap">Đăng nhập</a>
       </li>
       <?php endif ?>
       <?php if (isset($_SESSION["customer"])) :?>
@@ -103,8 +103,8 @@
             <?= $_SESSION["customer"]["TenKh"] ?>
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button" onclick="location.href='./profile'">Cài Đặt Tài Khoản</button>
-            <button class="dropdown-item" type="button" onclick="location.href='./dangxuat'">Đăng Xuất</button>
+            <button class="dropdown-item" type="button" onclick="location.href='./Profile'">Cài Đặt Tài Khoản</button>
+            <button class="dropdown-item" type="button" onclick="location.href='./DangXuat'">Đăng Xuất</button>
           </div>
         
       </li>

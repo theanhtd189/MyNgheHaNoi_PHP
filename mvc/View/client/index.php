@@ -24,16 +24,6 @@
 </head>
 
 <body>
-  <?php if(isset($_GET['url']))
-  {
-    echo $_GET['url'].'<br>'; 
-    
-  }
-  else
-  echo "chả có gì".'<br>';
-  
-  echo __DIR__;
-    ?>
   <section class="main">
     <?php include_once 'layout/header.php'; ?>
 
