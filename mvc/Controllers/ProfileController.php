@@ -38,17 +38,17 @@
 														$arr["DiaChi"] = $_POST["dia-chi"];
 														//$arr["MatKhau"] = md5($_POST["p1"]);
 														if ($this->CustomerModel->update_customer($id,$arr)) {
-															return header("Location:$this->url/profile?success=Cập nhật thành công");
+															return header("Location:$this->url/Profile?success=Cập nhật thành công");
 															//return;
 														} 
 														else 
-														return header("Location:$this->url/profile?success=Cập nhật thất bại");	
+														return header("Location:$this->url/Profile?success=Cập nhật thất bại");	
 				}
 				else
 				if($_POST["p2"]!=($_POST["p1"]))
 				{
 					//sai pass
-					return header("Location:$this->url/profile?err=Mật khẩu bạn nhập không đúng!!!");
+					return header("Location:$this->url/Profile?err=Mật khẩu bạn nhập không đúng!!!");
 				}
 				else{
 					//change all
@@ -62,11 +62,11 @@
 														$arr["DiaChi"] = $_POST["dia-chi"];
 														$arr["MatKhau"] = md5($_POST["p1"]);
 														if ($this->CustomerModel->update_customer($id,$arr)) {
-															return header("Location:$this->url/profile?success=Cập nhật thành công");
+															return header("Location:$this->url/Profile?success=Cập nhật thành công");
 															//return;
 														} 
 														else 
-														return header("Location:$this->url/profile?success=Cập nhật thất bại");	
+														return header("Location:$this->url/Profile?success=Cập nhật thất bại");	
 					}
 				}
 				

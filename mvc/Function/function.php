@@ -72,7 +72,7 @@ function ShowDanhMucSanPham($categories, $parent_id = 0, $char = '', $stt = 0)
         foreach ($cate_child as $key => $item)
         {
             // Hiển thị tiêu đề chuyên mục
-            echo "<li><a href='./danhmuc/get/".$item["Slug"]."' title='".$item['TenDanhMuc']."'>".$item['TenDanhMuc']."</a>";
+            echo "<li><a href='./DanhMuc/get/".$item["Slug"]."' title='".$item['TenDanhMuc']."'>".$item['TenDanhMuc']."</a>";
             // Tiếp tục đệ quy để tìm chuyên mục con của chuyên mục đang lặp
             ShowDanhMucSanPham($categories, $item['ID'], $char.'|---', ++$stt);
             echo '</li>';

@@ -12,7 +12,7 @@ $id = isset($_SESSION['customer'])?$_SESSION['customer']['ID']:header("Location:
       <?php if (isset($_GET["success"])) :?>
         <span style="align-self: baseline ; color: blue;" ><?=$_GET["success"]?></span>
       <?php endif ?>
-    <form action="./profile/update" method="post" style="margin-top: 50px">
+    <form action="./Profile/update" method="post" style="margin-top: 50px">
     <div>
         <div class="form-group row mt-md-5 mt-3">
             <label for="ho-ten" class="col-sm-3 col-form-label">

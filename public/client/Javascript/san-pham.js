@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
 		var sl = $("#quantity").val();
 		var id = $("#property").val();
 		$.ajax({
-			url: './giohang/add_cart/'+id+'/'+sl,
+			url: './GioHang/add_cart/'+id+'/'+sl,
 			type: 'GET',
 			async: false,
 			success: function (value) {
