@@ -72,15 +72,15 @@
 					# code...
 
 					$str = $this->Method($arr[0])."Controller";
-					if (file_exists("./app/mvc/Controllers/".$str.".php")) {
+					if (file_exists("./mvc/Controllers/".$str.".php")) {
 						# code...
 						$this->controller = $str;
 						unset($arr[0]);
 					}else{
 
-						header("Location:$this->url/error");
+						//header("Location:$this->url/error");
 					} 
-					require_once  "./app/mvc/Controllers/".$this->controller.".php";
+					require_once  "./mvc/Controllers/".$this->controller.".php";
 					$this->controller = new $this->controller();
 					// Xử lý action
 					if (isset($arr[1])) {
