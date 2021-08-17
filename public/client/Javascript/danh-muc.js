@@ -77,7 +77,7 @@ jQuery(document).ready(function($) {
 // 			// });
 			
 // 			$.ajax({
-// 				url: './giohang/add_cart/'+result.value+'/'+1,
+// 				url: './GioHang/add_cart/'+result.value+'/'+1,
 // 				type: 'GET',
 // 				async: false,
 // 				success: function (value) {
@@ -106,7 +106,7 @@ jQuery(document).ready(function($) {
 // 	// body...
 // 	var object = new Object();
 // 	$.ajax({
-// 		url: './trangchu/loadDetailProduct/'+ma_sp,
+// 		url: './TrangChu/loadDetailProduct/'+ma_sp,
 // 		type: 'GET',
 // 		async: false,
 // 		success: function (value) {
@@ -132,7 +132,7 @@ jQuery(document).ready(function($) {
 // function LoadCart() {
 // 	// body...
 // 	$.ajax({
-// 		url: './giohang/getcart',
+// 		url: './GioHang/getcart',
 // 		type: 'GET',
 // 		success: function (value) {
 // 	            // body...
@@ -182,7 +182,7 @@ jQuery(document).ready(function($) {
 
 // function deleteProductCart(id) {
 // 	$.ajax({
-// 		url: './giohang/delete_product_cart/'+id,
+// 		url: './GioHang/delete_product_cart/'+id,
 // 		type: 'GET',
 // 		success: function (value) {
 //             // body...
@@ -213,7 +213,7 @@ jQuery(document).ready(function($) {
 
 // 	console.log(soluong +" "+ id);
 // 	$.ajax({
-// 		url: './giohang/edit_so_luong_mua/'+id+'/'+soluong,
+// 		url: './GioHang/edit_so_luong_mua/'+id+'/'+soluong,
 // 		type: 'GET',
 // 		success: function (value) {
 // 			var arr= JSON.parse(value);

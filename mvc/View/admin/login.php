@@ -133,7 +133,7 @@
                         	text: arr["text"]
                         }).then((value) => {
                         	if (arr["trangthai"]=="success") {
-                                location.href = "<?php echo base_url() ?>/admin/trangchu";
+                                location.href = "<?php echo base_url() ?>/admin/TrangChu";
                         	}
                         });
 
