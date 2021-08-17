@@ -29,7 +29,7 @@
           </table>
     </div>
     <div class="d-flex justify-content-end p-1 mb-2 ">
-      <div class="m-1 p-1 "><button id="cap-nhat" onclick="location.href='./thanhtoan'">THANH TOÁN</button></div>
+      <div class="m-1 p-1 "><button id="cap-nhat" onclick="location.href='./ThanhToan'">THANH TOÁN</button></div>
     </div>
   </div>
 

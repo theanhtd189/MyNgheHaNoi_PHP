@@ -15,7 +15,7 @@
 
             <div class="search-price" style="padding:10px; background: aliceblue;">
                 <h6>Tìm Kiếm Theo Giá</h6>
-                <form action="./search" method="get" accept-charset="utf-8">
+                <form action="./Search" method="get" accept-charset="utf-8">
                    <ul>
                     
                     <li>

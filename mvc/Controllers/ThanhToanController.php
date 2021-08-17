@@ -42,7 +42,7 @@
 	    		# code...
 	    		if (!isset($_SESSION["cart"]) || sizeof($_SESSION["cart"]) <= 0) {
 	    			# code...
-	    			header("Location:$url/thanhtoan?cart=err");
+	    			header("Location:$url/ThanhToan?cart=err");
 	    			return;
 	    		}
 	    		$tong = 0 ;
@@ -74,11 +74,11 @@
 	    			$this->modelBill->insertDetailsBill($detailsbill);
 	    		}
 	    		unset($_SESSION["cart"]);
-	    		header("Location:$url/thanhtoan?success=true");
+	    		header("Location:$url/ThanhToan?success=true");
 	    		
 	    	}
 	    	else{
-	    		header("Location:$url/thanhtoan");
+	    		header("Location:$url/ThanhToan");
 	    	}
 	    }
 	}

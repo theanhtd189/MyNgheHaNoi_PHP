@@ -5,7 +5,7 @@
     </div>
 
     <h2 class="text-center">thanh toán thành công</h2>
-    <form action="./thanhtoan/add" method="post" style="margin-top: 50px">
+    <form action="./ThanhToan/add" method="post" style="margin-top: 50px">
         <div class="form-group row mt-md-5 mt-3">
             <label for="ho-ten" class="col-sm-3 col-form-label">
                 Họ Và Tên (<span style="color: red; font-size: 1rem;">người nhận *</span>) :

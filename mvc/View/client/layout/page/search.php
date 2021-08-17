@@ -43,17 +43,17 @@
             <ul class="pagination justify-content-center">
                 <?php if($page > 1): ?>
                     <li class="page-item disabled">
-                        <a class="page-link" href="./search?val=<?=$data['input_search']?>&page=<?=($page-1)?>" tabindex="-1" aria-disabled="true">Previous</a>
+                        <a class="page-link" href="./Search?val=<?=$data['input_search']?>&page=<?=($page-1)?>" tabindex="-1" aria-disabled="true">Previous</a>
                     </li>
                 <?php endif ?>
                 <?php for($i = 1 ; $i<=$data["so_trang"] ; $i++): ?>
                     <li class="page-item">
-                        <a class="page-link <?= ($i==$page)?'bg-dark text-light':'' ?>" href="./search?val=<?=$data['input_search']?>&page=<?=$i?>"><?=$i?></a>
+                        <a class="page-link <?= ($i==$page)?'bg-dark text-light':'' ?>" href="./Search?val=<?=$data['input_search']?>&page=<?=$i?>"><?=$i?></a>
                     </li>
                 <?php endfor ?>
                 <?php if($page < $data["so_trang"]): ?>
                     <li class="page-item">
-                        <a class="page-link" href="./search?val=<?=$data['input_search']?>&page=<?=($page+1)?>">Next</a>
+                        <a class="page-link" href="./Search?val=<?=$data['input_search']?>&page=<?=($page+1)?>">Next</a>
                     </li> 
                 <?php endif ?>
             </ul>

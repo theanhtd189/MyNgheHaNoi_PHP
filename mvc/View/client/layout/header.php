@@ -42,7 +42,7 @@
         <!-- Modal footer -->
         <div class="modal-footer">
 
-          <button type="button" class="btn btn-success btn-thanh-toan" onclick="location.href='./thanhtoan'">Thanh Toán</button>
+          <button type="button" class="btn btn-success btn-thanh-toan" onclick="location.href='./ThanhToan'">Thanh Toán</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
 
@@ -55,7 +55,7 @@
       <a href="index.php"><img src="./public/upload/images/icon.png" style="width:auto; height:100%;" alt=""></a>
     </div>
     <div class="search">
-      <form action="./search" method="get" accept-charset="utf-8">
+      <form action="./Search" method="get" accept-charset="utf-8">
         <div class="input-group"> <input type="text" class="form-control input-text" name="val" id="val" placeholder="Tìm kiếm sản phẩm...." aria-label="Recipient's username" aria-describedby="basic-addon2">
           <div class="input-group-append"> <button type="submit" class="btn btn-outline-warning btn-lg" type="button"><i class="fa fa-search"></i></button> </div>
         </div>
