@@ -78,7 +78,7 @@
 						unset($arr[0]);
 					}else{
 
-						header("Location:$this->url/error#404_controller");
+						header("Location:$this->url/error#404_controller_$arr[0]_$str");
 					} 
 					require_once  "./mvc/Controllers/".$this->controller.".php";
 					$this->controller = new $this->controller();
