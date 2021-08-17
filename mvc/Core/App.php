@@ -20,7 +20,7 @@
 					unset($arr[0]);
 					
 					if (isset($arr[1])) {
-						$str = $arr[1]."Controller";
+						$str = $this->Method($arr[1])."Controller";
 						if (file_exists("./mvc/Controllers/admin/".$str.".php")) {
 							# code...
 							$this->controller = $str;
@@ -71,7 +71,7 @@
 				} else {
 					# code...
 
-					$str = $this->Method($arr[0])."Controller";
+					$str = $arr[0]."Controller";
 					if (file_exists("./mvc/Controllers/".$str.".php")) {
 						# code...
 						$this->controller = $str;
