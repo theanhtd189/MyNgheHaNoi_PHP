@@ -27,10 +27,11 @@
   <?php if(isset($_GET['url']))
   {
     echo $_GET['url'].'<br>'; 
-    echo __DIR__;
+    
   }
   else
   echo "chả có gì";
+  echo __DIR__;
     ?>
   <section class="main">
     <?php include_once 'layout/header.php'; ?>
