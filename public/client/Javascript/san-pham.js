@@ -11,7 +11,7 @@ function checkdangnhap() {
 	// body...
 	var str = "";
 	$.ajax({
-		url: './sanpham/checkdangnhap',
+		url: './SanPham/checkdangnhap',
 		type: 'GET',
 		async: false,
 		success: function (value) {

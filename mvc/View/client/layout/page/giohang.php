@@ -50,13 +50,13 @@
               <img src="./public/upload/images/<?=$banchay["AnhChinh"]?>" alt="Tủ quần &#225;o"c style="position: absolute ; top:0px ; left:0px;">
               <div class="information ">
                 <div class="view">
-                  <a href="./sanpham/get/<?=$banchay['Slug']?>"><i class="fa fa-eye" style="font-size: 12px;"></i></i> Chi tiết</a>
+                  <a href="./SanPham/get/<?=$banchay['Slug']?>"><i class="fa fa-eye" style="font-size: 12px;"></i></i> Chi tiết</a>
                   <a  class="listproduct " onclick="SweetAlterDetailProduct('<?=$banchay["MaSP"]?>')"><i class="fa fa-shopping-cart"></i> Giỏ Hàng </a>
                 </div>
               </div>
             </div>
             <div class="info">
-              <p class="name text-center"><a href="./sanpham/get/<?=$banchay['Slug']?>"><?=$banchay["TenSp"]?></a> </p>
+              <p class="name text-center"><a href="./SanPham/get/<?=$banchay['Slug']?>"><?=$banchay["TenSp"]?></a> </p>
 
               <p class="price  text-center m-0">
                 ( <?=$banchay["XuatXu"]?> )

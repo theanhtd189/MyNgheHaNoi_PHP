@@ -66,13 +66,13 @@
                 <div class="img-product" style="background-image: url(./public/upload/images/<?=$key["AnhChinh"]?>);"></div>
                 <div class="information ">
                   <div class="view">
-                    <a href="./sanpham/get/<?=$key['Slug']?>"><i class="fa fa-eye" style="font-size: 12px;"></i></i> Chi tiết</a>
+                    <a href="./SanPham/get/<?=$key['Slug']?>"><i class="fa fa-eye" style="font-size: 12px;"></i></i> Chi tiết</a>
                     <a  class="listproduct " onclick="SweetAlterDetailProduct('<?=$key["MaSP"]?>')"><i class="fa fa-shopping-cart"></i> Giỏ Hàng </a>
                   </div>
                 </div>
               </div>
               <div class="info">
-                <p class="name text-center"><a href="./sanpham/get/<?=$key['Slug']?>"> <?=$key["TenSp"]?></a>  </p>
+                <p class="name text-center"><a href="./SanPham/get/<?=$key['Slug']?>"> <?=$key["TenSp"]?></a>  </p>
 
                 <p class="price  text-center m-0">
                   ( <?=$key["XuatXu"]?> )
@@ -105,13 +105,13 @@
               <div class="img-product" style="background-image: url(./public/upload/images/<?=$new["AnhChinh"]?>);"></div>
               <div class="information ">
                 <div class="view">
-                  <a href="./sanpham/get/<?=$new['Slug']?>"><i class="fa fa-eye" style="font-size: 12px;"></i></i> Chi tiết</a>
+                  <a href="./SanPham/get/<?=$new['Slug']?>"><i class="fa fa-eye" style="font-size: 12px;"></i></i> Chi tiết</a>
                   <a href="javascript:;" onclick="SweetAlterDetailProduct('<?=$new["MaSP"]?>')" class="listproduct"><i class="fa fa-shopping-cart"></i> Giỏ Hàng </a>
                 </div>
               </div>
             </div>
             <div class="info">
-              <p class="name text-center"><a href="./sanpham/get/<?=$new['Slug']?>">   <?=$new["TenSp"]?> </a>  </p>
+              <p class="name text-center"><a href="./SanPham/get/<?=$new['Slug']?>">   <?=$new["TenSp"]?> </a>  </p>
               <p class="price  text-center m-0">
                 
                   ( <?=$new["XuatXu"]?> )
@@ -142,13 +142,13 @@
               <div class="img-product" style="background-image: url(./public/upload/images/<?=$banchay["AnhChinh"]?>);"></div>
               <div class="information ">
                 <div class="view">
-                  <a href="./sanpham/get/<?=$banchay['Slug']?>"><i class="fa fa-eye" style="font-size: 12px;"></i></i> Chi tiết</a>
+                  <a href="./SanPham/get/<?=$banchay['Slug']?>"><i class="fa fa-eye" style="font-size: 12px;"></i></i> Chi tiết</a>
                   <a href="javascript:;" onclick="SweetAlterDetailProduct('<?=$new["MaSP"]?>')" class="listproduct"><i class="fa fa-shopping-cart"></i> Giỏ Hàng </a>
                 </div>
               </div>
             </div>
             <div class="info">
-              <p class="name text-center"><a href="./sanpham/get/<?=$banchay['Slug']?>"><?=$banchay["TenSp"]?></a> </p>
+              <p class="name text-center"><a href="./SanPham/get/<?=$banchay['Slug']?>"><?=$banchay["TenSp"]?></a> </p>
               <p class="price  text-center m-0">
                 ( <?=$banchay["XuatXu"]?> )
               </p>

@@ -97,14 +97,14 @@
 					$arr["NoiDung"] = $_POST["noi-dung-comment"];
 					$arr["IdKhachHang"] = (isset($_SESSION["customer"]["ID"]))?$_SESSION["customer"]["ID"]:0;
 					if($this->commentModel->InsertComment($arr)){
-						header("Location:$url/sanpham/get/$slug?action=true");
+						header("Location:$url/SanPham/get/$slug?action=true");
 					}else{
-						header("Location:$url/sanpham/get/$slug?action=false");
+						header("Location:$url/SanPham/get/$slug?action=false");
 					}
 
 				}
 				else{
-					header("Location:$url/sanpham/get/$slug");
+					header("Location:$url/SanPham/get/$slug");
 				}
 			}
 			else

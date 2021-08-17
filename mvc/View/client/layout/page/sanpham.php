@@ -96,7 +96,7 @@
     <h2> Bình Luận </h2>
     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="position: relative; display: flex;">
 
-        <form action="./sanpham/comment/<?=$data["product"]["Slug"]?>" method="post" accept-charset="utf-8" onsubmit="return CheckSession();" class="form-control d-flex align-items-center justify-content-between">
+        <form action="./SanPham/comment/<?=$data["product"]["Slug"]?>" method="post" accept-charset="utf-8" onsubmit="return CheckSession();" class="form-control d-flex align-items-center justify-content-between">
             <label for="comment" id="lb"><img src=".\public\client\image\User.png" id="user"></label>
             <div class="input-group ">
                 <input type="text" class="form-control" name="noi-dung-comment" placeholder="Đánh giá ............">
@@ -171,11 +171,11 @@
                 <li class="animated zoomInUp slow delay-1 col-12 col-md-6 col-lg-12">
                     <div class="pt-3 mb-3">
                         <div class="media">
-                            <a href="./sanpham/get/<?=$banchay['Slug']?>"><img class="mr-3 hvr-grow" src="./public/upload/images/<?=$banchay['AnhChinh']?>"
+                            <a href="./SanPham/get/<?=$banchay['Slug']?>"><img class="mr-3 hvr-grow" src="./public/upload/images/<?=$banchay['AnhChinh']?>"
                              style="width: 64px;height: 64px;object-fit: cover"></a>
                              <div class="media-body">
-                                <h5 class="mt-0"><a href="./sanpham/get/<?=$banchay['Slug']?>"><?=$banchay["TenSp"]?></a></h5>
-                                <a href="./sanpham/get/<?=$banchay['Slug']?>">Xem ngay</a>
+                                <h5 class="mt-0"><a href="./SanPham/get/<?=$banchay['Slug']?>"><?=$banchay["TenSp"]?></a></h5>
+                                <a href="./SanPham/get/<?=$banchay['Slug']?>">Xem ngay</a>
                             </div>
                         </div>
                     </div>
@@ -202,13 +202,13 @@
                 <img src="./public/upload/images/<?=$key['AnhChinh']?>" alt="Tủ quần &#225;o" class="img-fluid">
                 <div class="information ">
                   <div class="view">
-                    <a href="./sanpham/get/<?=$key['Slug']?>"><i class="fa fa-eye" style="font-size: 12px;"></i></i> Chi tiết</a>
+                    <a href="./SanPham/get/<?=$key['Slug']?>"><i class="fa fa-eye" style="font-size: 12px;"></i></i> Chi tiết</a>
                     <a  class="listproduct " onclick="SweetAlterDetailProduct('<?=$key["MaSP"]?>')"><i class="fa fa-shopping-cart"></i> Giỏ Hàng </a>
                 </div>
             </div>
         </div>
         <div class="info">
-            <p class="name text-center"><a href="./sanpham/get/<?=$key['Slug']?>"> <?=$key["TenSp"]?></a>  </p>
+            <p class="name text-center"><a href="./SanPham/get/<?=$key['Slug']?>"> <?=$key["TenSp"]?></a>  </p>
 
             <p class="price  text-center m-0">
               ( <?=$key["XuatXu"]?> )

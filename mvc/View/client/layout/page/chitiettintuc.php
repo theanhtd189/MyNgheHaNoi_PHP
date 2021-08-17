@@ -34,11 +34,11 @@
 						<li class="animated zoomInUp slow delay-1 col-12 col-md-6 col-lg-12">
 							<div class="pt-3 mb-3">
 								<div class="media">
-									<a href="./sanpham/get/<?=$banchay['Slug']?>"><img class="mr-3 hvr-grow" src="./public/upload/images/<?=$banchay['AnhChinh']?>"
+									<a href="./SanPham/get/<?=$banchay['Slug']?>"><img class="mr-3 hvr-grow" src="./public/upload/images/<?=$banchay['AnhChinh']?>"
 										style="width: 64px;height: 64px;object-fit: cover"></a>
 										<div class="media-body">
-											<h5 class="mt-0"><a href="./sanpham/get/<?=$banchay['Slug']?>"><?=$banchay["TenSp"]?></a></h5>
-											<a href="./sanpham/get/<?=$banchay['Slug']?>">Xem ngay</a>
+											<h5 class="mt-0"><a href="./SanPham/get/<?=$banchay['Slug']?>"><?=$banchay["TenSp"]?></a></h5>
+											<a href="./SanPham/get/<?=$banchay['Slug']?>">Xem ngay</a>
 										</div>
 									</div>
 								</div>
