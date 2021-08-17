@@ -30,7 +30,8 @@
     
   }
   else
-  echo "chả có gì";
+  echo "chả có gì".'<br>';
+  
   echo __DIR__;
     ?>
   <section class="main">
