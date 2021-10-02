@@ -6,9 +6,9 @@
 	{
 		protected $connect = null;
 		protected $host = "MYSQL5045.site4now.net";
-		protected $user = "a77f49_mynghe";
+		protected $user = "a7a8b0_mynghe";
 		protected $pass = "theanhtd189";
-		protected $name = "db_a77f49_mynghe";
+		protected $name = "db_a7a8b0_mynghe";
 		// protected $connect = null;
 		// protected $host = "localhost";
 		// protected $user = "root";
