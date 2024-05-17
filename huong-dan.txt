@@ -1,0 +1,5 @@
+- Cần sửa một số phần như tên giáo viên, tên nhóm, thành viên trong nhóm ở file báo cáo và file thuyết trình còn lại đều ok
+- Trang web đã tải code lên : http://mynghehn.ml/
+- Có thể chỉnh sửa nội dung, thêm, sửa tất cả ở link sau: https://mynghehanoi.herokuapp.com/admin
+- Tài khoản mật khẩu để đăng nhập là: admin/admin
+- Anh nào muốn chạy code trên máy tính của mình thì liên hệ em qua fb em hỗ trợ cài : https://www.facebook.com/TA1O9ER/
